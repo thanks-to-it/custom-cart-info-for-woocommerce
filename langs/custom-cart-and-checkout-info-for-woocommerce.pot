@@ -1,8 +1,8 @@
-#: custom-cart-info-for-woocommerce.php:163
+#: custom-cart-info-for-woocommerce.php:160
 msgid "Settings"
 msgstr ""
 
-#: custom-cart-info-for-woocommerce.php:166
+#: custom-cart-info-for-woocommerce.php:163
 msgid "Go Pro"
 msgstr ""
 

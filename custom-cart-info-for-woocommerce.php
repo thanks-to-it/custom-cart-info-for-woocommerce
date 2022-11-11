@@ -3,15 +3,12 @@
 Plugin Name: Custom Cart and Checkout Info for WooCommerce
 Plugin URI: https://wpfactory.com/item/custom-cart-and-checkout-info-for-woocommerce/
 Description: Add custom info to WooCommerce cart page, checkout page and/or mini cart.
-Version: 1.3.0
-Author: Algoritmika Ltd
-Author URI: https://algoritmika.com
+Version: 1.4.0-dev
+Author: WPFactory
+Author URI: https://wpfactory.com
 Text Domain: custom-cart-and-checkout-info-for-woocommerce
 Domain Path: /langs
-Copyright: © 2021 Algoritmika Ltd.
-WC tested up to: 5.2
-License: GNU General Public License v3.0
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+WC tested up to: 7.1
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
@@ -34,7 +31,7 @@ final class Alg_WC_Custom_Cart_Info {
 	 * @var   string
 	 * @since 1.0.0
 	 */
-	public $version = '1.3.0';
+	public $version = '1.4.0-dev-20221111-2227';
 
 	/**
 	 * @var   Alg_WC_Custom_Cart_Info The single instance of the class
