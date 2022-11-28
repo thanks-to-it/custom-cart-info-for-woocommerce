@@ -1,8 +1,40 @@
-#: custom-cart-info-for-woocommerce.php:160
-msgid "Settings"
+# Copyright (C) 2022 WPFactory
+# This file is distributed under the same license as the Custom Cart and Checkout Info for WooCommerce Pro plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: custom-cart-and-checkout-info-for-woocommerce 1.4.0-dev\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-cart-and-checkout-info-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2022-11-28T20:48:38+01:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: custom-cart-and-checkout-info-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Custom Cart and Checkout Info for WooCommerce Pro"
 msgstr ""
 
-#: custom-cart-info-for-woocommerce.php:163
+#. Plugin URI of the plugin
+msgid "https://wpfactory.com/item/custom-cart-and-checkout-info-for-woocommerce/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Add custom info to WooCommerce cart page, checkout page and/or mini cart."
+msgstr ""
+
+#. Author of the plugin
+msgid "WPFactory"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://wpfactory.com"
+msgstr ""
+
+#: custom-cart-info-for-woocommerce-pro.php:163
 msgid "Go Pro"
 msgstr ""
 
@@ -21,13 +53,11 @@ msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-cart-items.php:42
 #: includes/settings/class-alg-wc-ccci-settings-general.php:50
-#, php-format
 msgid "E.g.: %s."
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-cart-items.php:44
 #: includes/settings/class-alg-wc-ccci-settings-general.php:52
-#, php-format
 msgid "You can read more info on %s shortcode %s."
 msgstr ""
 
@@ -67,9 +97,7 @@ msgid "Total blocks"
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-general.php:66
-msgid ""
-"New settings fields will be displayed, if you change this number and \"Save "
-"changes\"."
+msgid "New settings fields will be displayed, if you change this number and \"Save changes\"."
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-general.php:85
