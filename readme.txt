@@ -3,7 +3,7 @@ Contributors: wpcodefactory, algoritmika, anbinder
 Tags: woocommerce, cart, mini cart, checkout, custom info, woo commerce
 Requires at least: 4.4
 Tested up to: 6.1
-Stable tag: 1.3.0
+Stable tag: 1.4.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,7 +15,7 @@ Add custom info to WooCommerce cart page, checkout page and/or mini cart.
 
 Show custom information using various shortcodes and give your customers a seamless experience. For example, show them the total weight or count of their items, or add SKU to each items name in cart.
 
-= Available Positions =
+### &#9989; Available Positions ###
 
 **Cart**
 
@@ -73,12 +73,12 @@ Show custom information using various shortcodes and give your customers a seaml
 * Review order after order total
 * Order Received (Thank You) page
 
-= Shortcodes =
+### &#9989; Shortcodes ###
 
 * `[alg_wc_cart_info]` shortcode can retrieve various cart related information, like total items weight, total items count etc.
 * `[alg_wc_cart_product_info]` shortcode can retrieve various product related information, like product SKU, ID, price etc.
 
-= Feedback =
+### &#128472; Feedback ###
 
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
 * [Visit plugin site](https://wpfactory.com/item/custom-cart-and-checkout-info-for-woocommerce/).
@@ -91,9 +91,11 @@ Show custom information using various shortcodes and give your customers a seaml
 
 == Changelog ==
 
-= 1.4.0 - 11/11/2022 =
+= 1.4.0 - 16/12/2022 =
+* Dev - Compatibility with custom order tables for WooCommerce (High-Performance Order Storage (HPOS)) declared.
+* Dev - Code refactoring.
 * Tested up to: 6.1.
-* WC tested up to: 7.1.
+* WC tested up to: 7.2.
 * Readme.txt updated.
 * Deploy script added.
 
