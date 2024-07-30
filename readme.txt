@@ -2,8 +2,8 @@
 Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
 Tags: woocommerce, cart, mini cart, checkout, custom info, woo commerce
 Requires at least: 4.4
-Tested up to: 6.3
-Stable tag: 1.4.2
+Tested up to: 6.6
+Stable tag: 1.4.3
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -90,6 +90,10 @@ Show custom information using various shortcodes and give your customers a seaml
 3. Start by visiting plugin settings at "WooCommerce > Settings > Custom Cart & Checkout Info".
 
 == Changelog ==
+
+= 1.4.3 - 30/07/2024 =
+* WC tested up to: 9.1.
+* Tested up to: 6.6.
 
 = 1.4.2 - 24/09/2023 =
 * WC tested up to: 8.1.
