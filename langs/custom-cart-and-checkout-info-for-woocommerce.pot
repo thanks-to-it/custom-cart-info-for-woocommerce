@@ -1,333 +1,365 @@
-# Copyright (C) 2024 WPFactory
-# This file is distributed under the same license as the Custom Cart and Checkout Info for WooCommerce Pro plugin.
+# Copyright (C) 2025 Algoritmika Ltd
+# This file is distributed under the GNU General Public License v3.0.
 msgid ""
 msgstr ""
-"Project-Id-Version: custom-cart-and-checkout-info-for-woocommerce 1.4.3\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-cart-and-checkout-info-for-woocommerce\n"
+"Project-Id-Version: Custom Cart and Checkout Info for WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-cart-info-for-woocommerce\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-07-30T09:48:46+02:00\n"
+"POT-Creation-Date: 2025-05-30T15:33:44+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.9.0\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: custom-cart-and-checkout-info-for-woocommerce\n"
 
 #. Plugin Name of the plugin
-msgid "Custom Cart and Checkout Info for WooCommerce Pro"
+#: custom-cart-info-for-woocommerce.php
+msgid "Custom Cart and Checkout Info for WooCommerce"
 msgstr ""
 
 #. Plugin URI of the plugin
-msgid "https://wpfactory.com/item/custom-cart-and-checkout-info-for-woocommerce/"
+#: custom-cart-info-for-woocommerce.php
+msgid "https://wordpress.org/plugins/custom-cart-and-checkout-info-for-woocommerce/"
 msgstr ""
 
 #. Description of the plugin
+#: custom-cart-info-for-woocommerce.php
 msgid "Add custom info to WooCommerce cart page, checkout page and/or mini cart."
 msgstr ""
 
 #. Author of the plugin
-msgid "WPFactory"
+#: custom-cart-info-for-woocommerce.php
+msgid "Algoritmika Ltd"
 msgstr ""
 
 #. Author URI of the plugin
-msgid "https://wpfactory.com"
+#: custom-cart-info-for-woocommerce.php
+msgid "https://profiles.wordpress.org/algoritmika/"
 msgstr ""
 
-#: includes/class-alg-wc-ccci.php:151
-msgid "Go Pro"
+#: includes/class-alg-wc-ccci.php:180
+msgid "Settings"
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-cart-items.php:25
 msgid "Cart Items"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:38
-msgid "Cart Items Table"
-msgstr ""
-
 #: includes/settings/class-alg-wc-ccci-settings-cart-items.php:41
-#: includes/settings/class-alg-wc-ccci-settings-general.php:49
-msgid "You can use shortcodes and/or HTML here."
+#: includes/settings/class-alg-wc-ccci-settings-general.php:41
+msgid "Shortcode info"
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-cart-items.php:42
-#: includes/settings/class-alg-wc-ccci-settings-general.php:50
-msgid "E.g.: %s."
+msgid "shortcode can retrieve various product related information, like product SKU, ID, price etc. For example:"
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-cart-items.php:44
-#: includes/settings/class-alg-wc-ccci-settings-general.php:52
-msgid "You can read more info on %s shortcode %s."
+#: includes/settings/class-alg-wc-ccci-settings-general.php:44
+msgid "Attributes"
+msgstr ""
+
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:45
+#: includes/settings/class-alg-wc-ccci-settings-general.php:45
+msgid "text/HTML added before the final output."
+msgstr ""
+
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:46
+#: includes/settings/class-alg-wc-ccci-settings-general.php:46
+msgid "text/HTML added after the final output."
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-cart-items.php:47
-#: includes/settings/class-alg-wc-ccci-settings-general.php:55
-msgid "here"
+msgid "attribute defines which product info to display:"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:50
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:83
+msgid "Cart Items Table"
+msgstr ""
+
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:87
+#: includes/settings/class-alg-wc-ccci-settings-general.php:90
+msgid "You can use shortcodes and/or HTML here."
+msgstr ""
+
+#. Translators: %s: Shortcode example.
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:90
+#: includes/settings/class-alg-wc-ccci-settings-general.php:93
+msgid "E.g.: %s."
+msgstr ""
+
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:97
 msgid "Cart items table"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:51
-#: includes/settings/class-alg-wc-ccci-settings-general.php:59
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:98
+#: includes/settings/class-alg-wc-ccci-settings-general.php:101
 msgid "Enable section"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:57
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:104
 msgid "Add before each item name"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:65
+#: includes/settings/class-alg-wc-ccci-settings-cart-items.php:112
 msgid "Add after each item name"
 msgstr ""
 
 #: includes/settings/class-alg-wc-ccci-settings-general.php:25
-#: includes/settings/class-alg-wc-ccci-settings-general.php:46
+#: includes/settings/class-alg-wc-ccci-settings-general.php:86
 msgid "Info Blocks"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:58
+#: includes/settings/class-alg-wc-ccci-settings-general.php:42
+msgid "shortcode can retrieve various cart related information, like total items weight, total items count etc. For example:"
+msgstr ""
+
+#: includes/settings/class-alg-wc-ccci-settings-general.php:47
+msgid "attribute defines which cart info to display:"
+msgstr ""
+
+#: includes/settings/class-alg-wc-ccci-settings-general.php:100
 msgid "Info blocks"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:65
+#: includes/settings/class-alg-wc-ccci-settings-general.php:107
 msgid "Total blocks"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:66
+#: includes/settings/class-alg-wc-ccci-settings-general.php:108
 msgid "New settings fields will be displayed, if you change this number and \"Save changes\"."
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:85
+#: includes/settings/class-alg-wc-ccci-settings-general.php:123
 msgid "Info Block"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:90
+#: includes/settings/class-alg-wc-ccci-settings-general.php:128
 msgid "Content"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:98
+#: includes/settings/class-alg-wc-ccci-settings-general.php:136
 msgid "Position"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:105
+#: includes/settings/class-alg-wc-ccci-settings-general.php:143
 msgid "Cart: Before cart"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:106
+#: includes/settings/class-alg-wc-ccci-settings-general.php:144
 msgid "Cart: Before cart table"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:107
+#: includes/settings/class-alg-wc-ccci-settings-general.php:145
 msgid "Cart: Before cart contents"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:108
+#: includes/settings/class-alg-wc-ccci-settings-general.php:146
 msgid "Cart: Cart contents"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:109
+#: includes/settings/class-alg-wc-ccci-settings-general.php:147
 msgid "Cart: Cart coupon"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:110
+#: includes/settings/class-alg-wc-ccci-settings-general.php:148
 msgid "Cart: Cart actions"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:111
+#: includes/settings/class-alg-wc-ccci-settings-general.php:149
 msgid "Cart: After cart contents"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:112
+#: includes/settings/class-alg-wc-ccci-settings-general.php:150
 msgid "Cart: After cart table"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:113
+#: includes/settings/class-alg-wc-ccci-settings-general.php:151
 msgid "Cart: Cart collaterals"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:114
+#: includes/settings/class-alg-wc-ccci-settings-general.php:152
 msgid "Cart: After cart"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:115
+#: includes/settings/class-alg-wc-ccci-settings-general.php:153
 msgid "Cart: Before cart totals"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:116
+#: includes/settings/class-alg-wc-ccci-settings-general.php:154
 msgid "Cart: Cart totals: Before shipping"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:117
+#: includes/settings/class-alg-wc-ccci-settings-general.php:155
 msgid "Cart: Cart totals: After shipping"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:118
+#: includes/settings/class-alg-wc-ccci-settings-general.php:156
 msgid "Cart: Cart totals: Before order total"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:119
+#: includes/settings/class-alg-wc-ccci-settings-general.php:157
 msgid "Cart: Cart totals: After order total"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:120
+#: includes/settings/class-alg-wc-ccci-settings-general.php:158
 msgid "Cart: Proceed to checkout"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:121
+#: includes/settings/class-alg-wc-ccci-settings-general.php:159
 msgid "Cart: After cart totals"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:122
+#: includes/settings/class-alg-wc-ccci-settings-general.php:160
 msgid "Cart: Before shipping calculator"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:123
+#: includes/settings/class-alg-wc-ccci-settings-general.php:161
 msgid "Cart: After shipping calculator"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:124
+#: includes/settings/class-alg-wc-ccci-settings-general.php:162
 msgid "Cart: If cart is empty"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:126
+#: includes/settings/class-alg-wc-ccci-settings-general.php:164
 msgid "Mini cart: Before mini cart"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:127
+#: includes/settings/class-alg-wc-ccci-settings-general.php:165
 msgid "Mini cart: Before buttons"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:128
+#: includes/settings/class-alg-wc-ccci-settings-general.php:166
 msgid "Mini cart: After mini cart"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:130
+#: includes/settings/class-alg-wc-ccci-settings-general.php:168
 msgid "Checkout: Before checkout form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:131
+#: includes/settings/class-alg-wc-ccci-settings-general.php:169
 msgid "Checkout: Before customer details"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:132
+#: includes/settings/class-alg-wc-ccci-settings-general.php:170
 msgid "Checkout: Billing"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:133
+#: includes/settings/class-alg-wc-ccci-settings-general.php:171
 msgid "Checkout: Shipping"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:134
+#: includes/settings/class-alg-wc-ccci-settings-general.php:172
 msgid "Checkout: After customer details"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:135
+#: includes/settings/class-alg-wc-ccci-settings-general.php:173
 msgid "Checkout: Before order review"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:136
+#: includes/settings/class-alg-wc-ccci-settings-general.php:174
 msgid "Checkout: Order review"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:137
+#: includes/settings/class-alg-wc-ccci-settings-general.php:175
 msgid "Checkout: After order review"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:138
+#: includes/settings/class-alg-wc-ccci-settings-general.php:176
 msgid "Checkout: After checkout form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:139
+#: includes/settings/class-alg-wc-ccci-settings-general.php:177
 msgid "Checkout: Before checkout shipping form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:140
+#: includes/settings/class-alg-wc-ccci-settings-general.php:178
 msgid "Checkout: After checkout shipping form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:141
+#: includes/settings/class-alg-wc-ccci-settings-general.php:179
 msgid "Checkout: Before order notes"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:142
+#: includes/settings/class-alg-wc-ccci-settings-general.php:180
 msgid "Checkout: After order notes"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:143
+#: includes/settings/class-alg-wc-ccci-settings-general.php:181
 msgid "Checkout: Before checkout billing form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:144
+#: includes/settings/class-alg-wc-ccci-settings-general.php:182
 msgid "Checkout: After checkout billing form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:145
+#: includes/settings/class-alg-wc-ccci-settings-general.php:183
 msgid "Checkout: Before checkout registration form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:146
+#: includes/settings/class-alg-wc-ccci-settings-general.php:184
 msgid "Checkout: After checkout registration form"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:147
+#: includes/settings/class-alg-wc-ccci-settings-general.php:185
 msgid "Checkout: Review order before cart contents"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:148
+#: includes/settings/class-alg-wc-ccci-settings-general.php:186
 msgid "Checkout: Review order after cart contents"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:149
+#: includes/settings/class-alg-wc-ccci-settings-general.php:187
 msgid "Checkout: Review order before shipping"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:150
+#: includes/settings/class-alg-wc-ccci-settings-general.php:188
 msgid "Checkout: Review order after shipping"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:151
+#: includes/settings/class-alg-wc-ccci-settings-general.php:189
 msgid "Checkout: Review order before order total"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:152
+#: includes/settings/class-alg-wc-ccci-settings-general.php:190
 msgid "Checkout: Review order after order total"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:153
+#: includes/settings/class-alg-wc-ccci-settings-general.php:191
 msgid "Checkout: Order Received (Thank You) page"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:157
+#: includes/settings/class-alg-wc-ccci-settings-general.php:195
 msgid "Position order (i.e. priority)"
 msgstr ""
 
-#: includes/settings/class-alg-wc-ccci-settings-general.php:158
+#: includes/settings/class-alg-wc-ccci-settings-general.php:196
 msgid "Change this to fine-tune the info block inside the \"Position\"."
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-ccci.php:25
+#: includes/settings/class-alg-wc-settings-ccci.php:26
 msgid "Custom Cart & Checkout Info"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-ccci.php:56
+#: includes/settings/class-alg-wc-settings-ccci.php:62
 msgid "Reset Settings"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-ccci.php:61
+#: includes/settings/class-alg-wc-settings-ccci.php:67
 msgid "Reset section settings"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-ccci.php:62
+#: includes/settings/class-alg-wc-settings-ccci.php:68
 msgid "Reset"
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-ccci.php:63
+#: includes/settings/class-alg-wc-settings-ccci.php:69
 msgid "Check the box and save changes to reset."
 msgstr ""
 
-#: includes/settings/class-alg-wc-settings-ccci.php:102
+#: includes/settings/class-alg-wc-settings-ccci.php:109
 msgid "Your settings have been reset."
 msgstr ""

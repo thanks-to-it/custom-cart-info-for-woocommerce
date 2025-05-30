@@ -2,7 +2,7 @@
 /**
  * Custom Cart Info for WooCommerce - Main Class
  *
- * @version 1.4.0
+ * @version 2.0.0
  * @since   1.0.0
  *
  * @author  Algoritmika Ltd.
@@ -23,13 +23,21 @@ final class Alg_WC_Custom_Cart_Info {
 	public $version = ALG_WC_CCCI_VERSION;
 
 	/**
+	 * core.
+	 *
+	 * @version 2.0.0
+	 * @since   2.0.0
+	 */
+	public $core;
+
+	/**
 	 * @var   Alg_WC_Custom_Cart_Info The single instance of the class
 	 * @since 1.0.0
 	 */
 	protected static $_instance = null;
 
 	/**
-	 * Main Alg_WC_Custom_Cart_Info Instance
+	 * Main Alg_WC_Custom_Cart_Info Instance.
 	 *
 	 * Ensures only one instance of Alg_WC_Custom_Cart_Info is loaded or can be loaded.
 	 *
@@ -49,7 +57,7 @@ final class Alg_WC_Custom_Cart_Info {
 	/**
 	 * Alg_WC_Custom_Cart_Info Constructor.
 	 *
-	 * @version 1.4.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 *
 	 * @access  public
@@ -69,7 +77,7 @@ final class Alg_WC_Custom_Cart_Info {
 
 		// Pro
 		if ( 'custom-cart-info-for-woocommerce-pro.php' === basename( ALG_WC_CCCI_FILE ) ) {
-			require_once( 'pro/class-alg-wc-ccci-pro.php' );
+			require_once plugin_dir_path( __FILE__ ) . 'pro/class-alg-wc-ccci-pro.php';
 		}
 
 		// Include required files
@@ -89,32 +97,47 @@ final class Alg_WC_Custom_Cart_Info {
 	 * @since   1.3.0
 	 */
 	function localize() {
-		load_plugin_textdomain( 'custom-cart-and-checkout-info-for-woocommerce', false, dirname( plugin_basename( ALG_WC_CCCI_FILE ) ) . '/langs/' );
+		load_plugin_textdomain(
+			'custom-cart-and-checkout-info-for-woocommerce',
+			false,
+			dirname( plugin_basename( ALG_WC_CCCI_FILE ) ) . '/langs/'
+		);
 	}
 
 	/**
 	 * wc_declare_compatibility.
 	 *
-	 * @version 1.4.0
+	 * @version 2.0.0
 	 * @since   1.4.0
 	 *
-	 * @see     https://github.com/woocommerce/woocommerce/wiki/High-Performance-Order-Storage-Upgrade-Recipe-Book#declaring-extension-incompatibility
+	 * @see     https://developer.woocommerce.com/docs/hpos-extension-recipe-book/
 	 */
 	function wc_declare_compatibility() {
 		if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
-			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', ALG_WC_CCCI_FILE, true );
+			$files = (
+				defined( 'ALG_WC_CCCI_FILE_FREE' ) ?
+				array( ALG_WC_CCCI_FILE, ALG_WC_CCCI_FILE_FREE ) :
+				array( ALG_WC_CCCI_FILE )
+			);
+			foreach ( $files as $file ) {
+				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility(
+					'custom_order_tables',
+					$file,
+					true
+				);
+			}
 		}
 	}
 
 	/**
 	 * Include required core files used in admin and on the frontend.
 	 *
-	 * @version 1.4.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function includes() {
 		// Core
-		$this->core = require_once( 'class-alg-wc-ccci-core.php' );
+		$this->core = require_once plugin_dir_path( __FILE__ ) . 'class-alg-wc-ccci-core.php';
 	}
 
 	/**
@@ -124,20 +147,27 @@ final class Alg_WC_Custom_Cart_Info {
 	 * @since   1.2.0
 	 */
 	function admin() {
+
 		// Action links
-		add_filter( 'plugin_action_links_' . plugin_basename( ALG_WC_CCCI_FILE ), array( $this, 'action_links' ) );
+		add_filter(
+			'plugin_action_links_' . plugin_basename( ALG_WC_CCCI_FILE ),
+			array( $this, 'action_links' )
+		);
+
 		// Settings
 		add_filter( 'woocommerce_get_settings_pages', array( $this, 'add_woocommerce_settings_tab' ) );
+
 		// Version update
 		if ( get_option( 'alg_wc_custom_cart_info_version', '' ) !== $this->version ) {
 			add_action( 'admin_init', array( $this, 'version_updated' ) );
 		}
+
 	}
 
 	/**
 	 * Show action links on the plugin screen.
 	 *
-	 * @version 1.4.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 *
 	 * @param   mixed $links
@@ -145,22 +175,22 @@ final class Alg_WC_Custom_Cart_Info {
 	 */
 	function action_links( $links ) {
 		$custom_links = array();
-		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_custom_cart_info' ) . '">' . __( 'Settings', 'woocommerce' ) . '</a>';
-		if ( 'custom-cart-info-for-woocommerce.php' === basename( ALG_WC_CCCI_FILE ) ) {
-			$custom_links[] = '<a target="_blank" style="font-weight: bold; color: green;" href="https://wpfactory.com/item/custom-cart-and-checkout-info-for-woocommerce/">' .
-				__( 'Go Pro', 'custom-cart-and-checkout-info-for-woocommerce' ) . '</a>';
-		}
+
+		$custom_links[] = '<a href="' . admin_url( 'admin.php?page=wc-settings&tab=alg_wc_custom_cart_info' ) . '">' .
+			__( 'Settings', 'custom-cart-and-checkout-info-for-woocommerce' ) .
+		'</a>';
+
 		return array_merge( $custom_links, $links );
 	}
 
 	/**
 	 * Add Custom Cart Info settings tab to WooCommerce settings.
 	 *
-	 * @version 1.4.0
+	 * @version 2.0.0
 	 * @since   1.0.0
 	 */
 	function add_woocommerce_settings_tab( $settings ) {
-		$settings[] = require_once( 'settings/class-alg-wc-settings-ccci.php' );
+		$settings[] = require_once plugin_dir_path( __FILE__ ) . 'settings/class-alg-wc-settings-ccci.php';
 		return $settings;
 	}
 

@@ -1,9 +1,9 @@
 === Custom Cart and Checkout Info for WooCommerce ===
-Contributors: wpcodefactory, omardabbas, karzin, anbinder, algoritmika, kousikmukherjeeli
-Tags: woocommerce, cart, mini cart, checkout, custom info, woo commerce
+Contributors: algoritmika, thankstoit, anbinder, karzin
+Tags: woocommerce, cart, mini cart, checkout, custom info
 Requires at least: 4.4
-Tested up to: 6.6
-Stable tag: 1.4.3
+Tested up to: 6.8
+Stable tag: 2.0.0
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -15,7 +15,43 @@ Add custom info to WooCommerce cart page, checkout page and/or mini cart.
 
 Show custom information using various shortcodes and give your customers a seamless experience. For example, show them the total weight or count of their items, or add SKU to each items name in cart.
 
-### &#9989; Available Positions ###
+### 🚀 WooCommerce Custom Info in Cart & Checkout ###
+
+Enhance your WooCommerce store's cart and checkout pages with the "Custom Cart and Checkout Info for WooCommerce" plugin. Tailored to provide a seamless shopping experience, this tool allows you to insert custom information at various strategic points on your cart and checkout pages, and even in the mini cart.
+
+Customization has never been this extensive; display essential details like total weight or item count, or even add SKU to product names in the cart using versatile shortcodes like `[alg_wc_cart_info]` and `[alg_wc_cart_product_info]`.
+
+### 🚀 Create Custom Info Block in Cart and Checkout Pages ###
+
+The core functionality of this plugin is to enable creating custom information blocks specifically within the cart and checkout pages.
+
+These info blocks can display a variety of content, including promotional messages, order-specific information, or checkout instructions, enhancing the customer's final stages of the purchasing process.
+
+### 🚀 Show Dynamic Content Display with Shortcodes ###
+
+Utilize specialized shortcodes like `[alg_wc_cart_info]` and `[alg_wc_cart_product_info]` to dynamically display relevant information based on the customer's cart contents or other checkout details.
+
+This feature allows for real-time updates and personalized information (like total items weight, total items count, SKU, product ID, and more) to be shared with the customer as they complete their purchase.
+
+### 🚀 Extensive Customization of Info Blocks ###
+
+Personalize the appearance and content of information blocks to match the store's branding and the specific needs of the checkout process.
+
+This could include styling options, text customizations, and the decision of where and when these blocks appear during checkout.
+
+### 🚀 Enhanced Checkout Communication ###
+
+Improve communication and customer guidance during checkout by strategically placing informative blocks.
+
+These can include shipping details, special offers, or reminders about return policies, providing clarity and support to customers during a critical phase of their shopping journey.
+
+### 🚀 Improved Customer Engagement and Conversions ###
+
+By providing timely and relevant information at the checkout, these blocks can help reduce cart abandonment, address customer queries, and potentially increase conversion rates.
+
+This allow you to make timely decisions & communicate messages at the right step of customer's journey, making them a valuable tool for enhancing the overall effectiveness of the checkout process.
+
+### ℹ Available Positions ###
 
 **Cart**
 
@@ -73,15 +109,15 @@ Show custom information using various shortcodes and give your customers a seaml
 * Review order after order total
 * Order Received (Thank You) page
 
-### &#9989; Shortcodes ###
+### ℹ Shortcodes ###
 
 * `[alg_wc_cart_info]` shortcode can retrieve various cart related information, like total items weight, total items count etc.
 * `[alg_wc_cart_product_info]` shortcode can retrieve various product related information, like product SKU, ID, price etc.
 
-### &#128472; Feedback ###
+### 🗘 Feedback ###
 
 * We are open to your suggestions and feedback. Thank you for using or trying out one of our plugins!
-* [Visit plugin site](https://wpfactory.com/item/custom-cart-and-checkout-info-for-woocommerce/).
+* Head to the plugin [GitHub Repository](https://github.com/thanks-to-it/custom-cart-info-for-woocommerce) to find out how you can pitch in.
 
 == Installation ==
 
@@ -90,6 +126,15 @@ Show custom information using various shortcodes and give your customers a seaml
 3. Start by visiting plugin settings at "WooCommerce > Settings > Custom Cart & Checkout Info".
 
 == Changelog ==
+
+= 2.0.0 - 30/05/2025 =
+* Dev - The free version now allows an unlimited number of info blocks.
+* Dev - Security - Output escaped.
+* Dev - PHP v8.2 compatibility (dynamic properties).
+* Dev - Code refactoring.
+* Dev - Coding standards improved.
+* WC tested up to: 9.8.
+* Tested up to: 6.8.
 
 = 1.4.3 - 30/07/2024 =
 * WC tested up to: 9.1.
